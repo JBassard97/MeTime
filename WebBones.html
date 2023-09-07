@@ -4,36 +4,49 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./MeTime/Pretty.css"> 
+        <link rel="stylesheet" href="./Pretty.css"> 
         <title>Me Time: A Place to Figure it Out</title>
     </head>
     <body>
         <header id="top">
             <h1>Me  Time:</h1>
             <h2> A Place to Figure it Out</h2>
+            <h2>A beginner's coding diary</h2>
+            <p></p>
         </header>
         <!--This is a comment, not to be displayed in browser-->
         <main>
-            <h2>A beginner's coding diary</h2>
-            <p></p>
+        
         </main>
         <!-- <p>I figured out how to embed a YouTube video. It's surprisingly easy, 
         the HTML code needed is a quick copy and paste from your video of choice.</p>-->
+        <section class="vid1" id="purImagination">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bcq3pW60eDY?si=NdROInug1LStzyuS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="vid2" id="snailHouse">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tc6ZWa4X_PE?si=W0u9KPkHQAATXxBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
         <!--<p>Pasting the links one right after the other will give the above effect!</p>-->
+        <section class="tests" id="differentSizes">
         <p><a href="https://youtu.be/fku72SKMU1g?si=w07AYMafw75KPKvi">A link to a YouTube video</a></p>
         <p><a href="https://tse2.mm.bing.net/th?id=OIP.6l6GL73VzbtCZnlOr7_ZcwHaH3&pid=Api&P=0&h=180">A Picture of Charizard</a></p>
         <!--<code> x = 5;
                 y = 6;
                 z = x + y;
         </code>-->
-        <button>Button?</button><button>Button!</button>
+        <p id="lava">Bean Status: <b>not FLICCed</b></p>
+        <p>FLICC the Bean?</p>
+        <button type="button" onclick='document.getElementById("lava").innerHTML = "Dirty Lad"'>Hell Yeah!</button>
+        <button type="button" onclick='document.getElementById("lava").innerHTML = "Dude too much"'>Hell Yeah!</button>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">I lost track of time</button>
+
+<p id="demo"></p>
+        
+        <!--This element preserves the exact format in the code-->
         <pre>
             milk
             sugar
 
-            <style></style>
             vanlila
         </pre>
         <!--Displays a custom error message upon loading page-->
@@ -43,11 +56,22 @@
         <p>This is<br>a pararaph<br>with line breaks.</p>
         <p>innit<br>neat?</p>
         <p>This has no color</p>
+        </section>
+        <!--The following is an example of "Inline CSS" and styles directly in HTML-->
+        <section class="colors" id="colorText">
         <p style="color:aqua;">This is aqua dude.</p>
         <p style="font-size:50px; color:blueviolet;">Big and Purple?</p>
         <p style="font-size:75px; color:teal;"><b>BIGGER. BOLDER. TEAL.</b></p>
         <ul><sub>submissive</sub><sup>super</sup></ul>
         <p id="demo">JavaScript can change HTML content.</p>
         <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        </section>
+        <!--The following section is called "footer" and it is refered to as .footer in the CSS file-->
+        <section class="footer" id="prettyfooter">
+            <footer>
+                <p>Made by Johnny Acciarito</p>
+                <p>Est. 2023</p>
+            </footer>
+        </section>
     </body>
 </html>
