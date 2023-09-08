@@ -4,8 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./Pretty.css"> 
+        <link rel="stylesheet" href="./style.css"> 
         <title>Me Time: A Place to Figure it Out</title>
+        <style>
+            p.a {
+                font: italic small-caps bold 30px Georgia, serif;
+         }
+
+            p.b {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
     </head>
     <body>
         <header id="top">
@@ -35,12 +44,14 @@
                 z = x + y;
         </code>-->
         <p id="lava">Bean Status: <b>not FLICCed</b></p>
-        <p>FLICC the Bean?</p>
+        <section class="question" id="beanQuestion"> 
+        <p class="a">FLICC the Bean? It needs it pardner~</p>
+        </section>
         <button type="button" onclick='document.getElementById("lava").innerHTML = "Dirty Lad"'>Hell Yeah!</button>
         <button type="button" onclick='document.getElementById("lava").innerHTML = "Dude too much"'>Hell Yeah!</button>
-        <button onclick="document.getElementById('demo').innerHTML=Date()">I lost track of time</button>
+        <button onclick="document.getElementById('demo1').innerHTML=Date()">I lost track of time</button>
 
-<p id="demo"></p>
+<p id="demo1"></p>
         
         <!--This element preserves the exact format in the code-->
         <pre>
@@ -61,7 +72,7 @@
         <section class="colors" id="colorText">
         <p style="color:aqua;">This is aqua dude.</p>
         <p style="font-size:50px; color:blueviolet;">Big and Purple?</p>
-        <p style="font-size:75px; color:teal;"><b>BIGGER. BOLDER. TEAL.</b></p>
+        <p class="b" style="font-size:75px; color:teal;"><b>BIGGER. BOLDER. TEAL.</b></p>
         <ul><sub>submissive</sub><sup>super</sup></ul>
         <p id="demo">JavaScript can change HTML content.</p>
         <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
